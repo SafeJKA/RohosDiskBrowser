@@ -1,0 +1,154 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "XKeyboardRes.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "XKeyboardRes.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XKEYBOARD DIALOGEX 0, 0, 296, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Keyboard"
+FONT 12, "MS Sans Serif", 400, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,184,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,241,121,50,14
+    PUSHBUTTON      "01",IDC_KBD_01,7,2,20,14
+    PUSHBUTTON      "02",IDC_KBD_02,29,2,20,14
+    PUSHBUTTON      "03",IDC_KBD_03,51,2,20,14
+    PUSHBUTTON      "04",IDC_KBD_04,73,2,20,14
+    PUSHBUTTON      "05",IDC_KBD_05,95,2,20,14
+    PUSHBUTTON      "06",IDC_KBD_06,117,2,20,14
+    PUSHBUTTON      "07",IDC_KBD_07,139,2,20,14
+    PUSHBUTTON      "08",IDC_KBD_08,161,2,20,14
+    PUSHBUTTON      "09",IDC_KBD_09,183,2,20,14
+    PUSHBUTTON      "10",IDC_KBD_10,205,2,20,14
+    PUSHBUTTON      "11",IDC_KBD_11,227,2,20,14
+    PUSHBUTTON      "12",IDC_KBD_12,249,2,20,14
+    PUSHBUTTON      "13",IDC_KBD_13,271,2,20,14
+    PUSHBUTTON      "14",IDC_KBD_14,7,18,20,14
+    PUSHBUTTON      "15",IDC_KBD_15,29,18,20,14
+    PUSHBUTTON      "16",IDC_KBD_16,51,18,20,14
+    PUSHBUTTON      "17",IDC_KBD_17,73,18,20,14
+    PUSHBUTTON      "18",IDC_KBD_18,95,18,20,14
+    PUSHBUTTON      "19",IDC_KBD_19,117,18,20,14
+    PUSHBUTTON      "20",IDC_KBD_20,139,18,20,14
+    PUSHBUTTON      "21",IDC_KBD_21,161,18,20,14
+    PUSHBUTTON      "22",IDC_KBD_22,183,18,20,14
+    PUSHBUTTON      "23",IDC_KBD_23,205,18,20,14
+    PUSHBUTTON      "24",IDC_KBD_24,227,18,20,14
+    PUSHBUTTON      "25",IDC_KBD_25,249,18,20,14
+    PUSHBUTTON      "26",IDC_KBD_26,271,18,20,14
+    PUSHBUTTON      "27",IDC_KBD_27,29,34,20,14
+    PUSHBUTTON      "28",IDC_KBD_28,51,34,20,14
+    PUSHBUTTON      "29",IDC_KBD_29,73,34,20,14
+    PUSHBUTTON      "30",IDC_KBD_30,95,34,20,14
+    PUSHBUTTON      "31",IDC_KBD_31,117,34,20,14
+    PUSHBUTTON      "32",IDC_KBD_32,139,34,20,14
+    PUSHBUTTON      "33",IDC_KBD_33,161,34,20,14
+    PUSHBUTTON      "34",IDC_KBD_34,183,34,20,14
+    PUSHBUTTON      "35",IDC_KBD_35,205,34,20,14
+    PUSHBUTTON      "36",IDC_KBD_36,227,34,20,14
+    PUSHBUTTON      "37",IDC_KBD_37,249,34,20,14
+    PUSHBUTTON      "Shift",IDC_KBD_LSHIFT,5,50,32,14
+    PUSHBUTTON      "38",IDC_KBD_38,39,50,20,14
+    PUSHBUTTON      "39",IDC_KBD_39,61,50,20,14
+    PUSHBUTTON      "40",IDC_KBD_40,83,50,20,14
+    PUSHBUTTON      "41",IDC_KBD_41,105,50,20,14
+    PUSHBUTTON      "42",IDC_KBD_42,127,50,20,14
+    PUSHBUTTON      "43",IDC_KBD_43,149,50,20,14
+    PUSHBUTTON      "44",IDC_KBD_44,171,50,20,14
+    PUSHBUTTON      "45",IDC_KBD_45,193,50,20,14
+    PUSHBUTTON      "46",IDC_KBD_46,215,50,20,14
+    PUSHBUTTON      "47",IDC_KBD_47,237,50,20,14
+    PUSHBUTTON      "Shift",IDC_KBD_RSHIFT,259,50,32,14
+    PUSHBUTTON      "",IDC_KBD_SPACEBAR,67,68,162,14
+    CONTROL         "Show text",IDC_KBD_SHOW_TEXT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,105,50,10
+    GROUPBOX        "",IDC_KBD_GROUPBOX,5,84,286,33
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_XKEYBOARD_STRING_RANGE 
+                            "Please enter at least %1 characters and no more than %2 characters."
+    IDS_XKEYBOARD_STRING_RANGE1 
+                            "Please enter at least %1 character and no more than %2 characters."
+    IDS_XKEYBOARD_ALPHA_NUMERIC 
+                            "The password may contain only alphabetic and numeric characters."
+    IDS_XKEYBOARD_SPECIAL   "The password must contain at least one special character."
+    IDS_XKEYBOARD_SPECIAL_DIGIT 
+                            "The password must contain at least one numeric or special character."
+    IDS_XKEYBOARD_SIMILAR_MRU 
+                            "The password is too similar to a recently used password."
+    IDS_XKEYBOARD_NON_SPACE "The password must contain at least 1 non-space character."
+    IDS_XKEYBOARD_TIMEOUT   "%s - Dialog will close in %d seconds"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

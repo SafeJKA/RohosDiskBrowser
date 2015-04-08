@@ -1,0 +1,537 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\strings.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "..\\strings.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_MOUNT           "Unable to connect Rohos drive."
+
+  IDS_KEY_X_IS_INSERTED_FOR_DISK "USB Key %s has been found, press OK to get disk password from the Key."
+
+    
+    IDS_BAD_DISKINFO        "Error occurred while reading Rohos disk configuration. Probably this is not Rohos disk or disk is damaged. Try 'restore disk' option."
+    IDS_BAD_DISKINFO_CAUSE  "Please update Rohos and try again. If error will occur again, try 'restore disk' option."
+    IDS_ERR_MOUNT_CAUSE     "Probably the Data storage caused an error (NTFS, Network drive). Or this Rohos Disk is alredy connected."
+
+    IDS_DRV_ERR             "Rohos driver report an error."
+    IDS_DRV_ERR_CAUSE       "Probably the Windows was reconfigured. Please reinstall Rohos and tell us about this."
+
+    IDS_DISK_IS_BUSY        "There are files currently opened on disk %s.\nYou can lose your data if you do not close these files before disconnecting disk!\nDo you want to disconnect anyway?"
+
+    IDS_ERR_FORMAT          "Rohos was unable to format new encrypted drive. You need to manually format Rohos drive to enable it.\n\nRight click on the drive icon at Explorer and choose 'format'"
+                            
+
+    IDS_ERR_UNMOUNT         "Unable to turn off this disk"
+    IDS_ERR_SETPROPS_X      "Unable to change disk properties"
+
+ 
+	IDS_MESSAGE_FROM_ROH		"Rohos message"
+IDS_MISSING_FILES_INFO		"Some Rohos files are missing or have been corrupted. If Rohos is not working properly, you should reinstall it.\nMissing files: %s"
+IDS_INCOPATIBLE_OS		"Rohos is not compatible with Windows 95, 98, ME"
+IDS_SUPPORT_OS			"Rohos was designed only for Windows 2000, XP, 2003"
+
+  
+IDS_ERR_START_CRYPT_DRV		"Rohos unable to start disk encryption driver."
+
+IDS_FAIL_DISMOUNT		"Unable to disconnect the disk."
+IDS_FAIL_DISMOUNT_INFO		"Error was probably caused by data storage device."
+IDS_FAIL_CREATE_DISK_FILE	"Unable to create Rohos Disk container file."
+
+IDS_FAIL_CREATE_DISK_FILE_INFO	"Please check the selected data storage device."
+IDS_FAIL_CREATE_DISK		"Unable to create encrypted Rohos volume."
+IDS_FAIL_CREATE_DISK_INFO	"This may be caused by an internal error. \n\nPlease tell us about this problem. You can do it by using the Support dialog in Rohos Center window."
+IDS_ERR_CRYPTO_KEY		"An error occurred while creating encryption key"
+
+IDS_WRONG_DISK_PASSW		"The password is incorrect."
+IDS_WRONG_DISK_PASSW_INFO	"If you are sure that the password is correct, you can use Rohos Disk restore to repair the Rohos volume."
+IDS_ERROR_X_CAUSE_X		"%s\n\nCaused by: %s"
+IDS_CREATING_ROH_DISK		"Creating encrypted volume ..."
+IDS_DOCUMENTS_FOLDER		"\\Documents"
+IDS_PLEASE_REPORT_US		"Please tell us about this problem. You can do it by using Support dialog in Rohos Center window. We are sorry for inconvenience."
+IDS_ENTER_PASS_TO_DELETE	"Enter password for deleting disk:"
+IDS_DELETE_DISK			"Are you sure you want to delete Rohos disk and it's container file ?"
+
+IDS_SHOW_HELP_CREATE_DISK	"Open help window about Rohos virtual encrypted disk."
+IDS_SMALL_SPACE_X_DRIVE		"Not enough free disk space on the drive %s for disk container file.\n\nWe recommend you to: \n- choose another path for disk container file. \n- choose smaller disk size. \n\nContinue anyway?"
+IDS_DISK_FOLDER			"Rohos Disk container:"
+IDS_HDD_FREE_SPACE		"Free space on the disk drive(s): "
+IDS_CREATE_DISK2_DLG		"Disk details"
+IDS_DRIVE_LETER			"Disk letter:"
+IDS_DISK_SIZE_MB		"Disk Size (in Megabytes):"
+IDS_DISK_FS			"File system:"
+IDS_ENCYPT_ALGORITM		"Encryption algorithm:"
+IDS_DISK_LOCATION		"Encrypted data will be stored in this container file:"
+
+IDS_DISK_PASSW_CHANGE_DLG	"Change disk password"
+IDS_DISK_OPTIONS_DLG		"Rohos Disk options"
+
+IDS_NEWDISK_DLG			"Create new Rohos disk"
+IDS_PASSWORD_DLG		"Rohos"
+IDS_ENTER_DISK_PASSW		"Enter password to access Rohos disk:"
+IDS_SUPPORT_DLG			"Support users"
+IDS_SUPPORT_INFO		"Thank you for using Rohos. Here you can directly contact our support department. Using your feedback we can improve Rohos to provide the highest quality of our product. \nDescribe features which you suggest to implement or problems you encountered in Rohos:"
+IDS_YOUR_EMAIL			"Your e-mail (optional):"
+IDS_SEND_OS_INFO		"Don't send system information ."
+IDS_VIEW			"View"
+IDB_SEND_MESSAGE		"Send message"
+IDS_SHOW_HELP			"Open help topic on this"
+IDS_SHOW_OS_INFO		"Display your system information."
+IDS_SEND_EMAIL_SELF		"Send message manually."
+IDS_OS_INFO_DESC		"Contains Rohos log files and your system information."
+IDS_SEND_REPORT_DESC		"Send message now. You must have an Internet connection."
+IDS_REPORT_HEADER		"\nThis file includes the following information:\n - All Rohos files version.\n - Application internal state.\n - Version of Windows and Internet Explorer\n\n\n We do not collect your personal data here. However this report can contain some specific information about your system, like user name, disk size, computer name. The information is used by programming groups at Teslain for quality control and will not be used for tracking individual users or installations for any marketing purpose. If we need more information about problem or your system, we will contact you by your email if you enter it.\n\n\n"
+IDS_PLS_ENTER_MSG		"Please enter message."
+IDS_SENDING_MSG			"Sending message ..."
+IDS_ERR_SEND_MSG_INFO		"The message has not been sent. \nYou can send us the message manually (see email link below)."		
+IDS_EMAIL_MSG_SUBJECT		"Question about Rohos: "
+IDS_SURE_TO_CANCEL_		"Are you sure to abort operation ?"
+IDS_DOING_OPERATION		"Performing operation"
+IDS_WAIT_PLS			"Please wait."
+IDS_WIZARD_DLG			"Rohos Get Ready Wizard"
+IDS_ERR_DESC_AFTER_UPDATE	"If this error occurred after updating Rohos, we recommend you to make a system restart."
+IDS_CENTER_DLG			"Rohos Center"
+IDS_ARE_YOU_SURE_EXIT		"Exit Rohos and disconnect the disk ?"
+IDS_UPDATES_DLG			"Update"
+IDS_UPDATES_INFO		"You can manually check for updates and view what's new in Rohos before downloading update. Please ensure that you are connected to the Internet before checking for updates."
+IDS_UPDATE_BTN			"Check updates now"
+IDS_VER_X_INSTALLED		"Your Rohos version is %s"
+IDS_SHOW_HISTORY_HTML		"<br><a href='app:WM_SHOW_HISTORY'><font color='blue'><U>View changes history...</U></font></a>"
+IDS_NO_RIGHT_TO_INSTALL_HTML	"<br><br>You don't have administrator privileges for installing updates."
+IDS_ERROR 			"Unsuccessful"
+IDS_ERR_DOWNLOAD_TRY2		"Unable to start downloading update. Please try again later."
+IDS_ERR_INSTALL_UPDATE		"Unable to install Rohos update. Please tell us about this problem. You can do it using Support dialog in Rohos Center window."
+IDS_SUCC_UPDATE			"Update is installed successfully. Restart your system to apply changes."
+IDS_ERR_DOWNLOAD		"Unable to download update. Check for Internet connection or try later."
+IDS_CHECKING_FOR_UPDATES	"Checking for update ..."
+IDS_LOADING_UPDATES		"Downloading update ..."
+IDS_LOADING_X_FROM_X_KB		"Loading: %d Kb. from %d Kb."
+IDS_CANT_CHECK_UPDATES_HTML	"<b>Unable to check for updates.</b> Check for Internet connection or try later on."
+IDS_FOUND_UPDATE_X_X_KB_X_VER_HTML	"<b>New Rohos is available!</b> (ver. %s, %s). You have Rohos ver. %s.<br><a href='app:WM_SHOW_HISTORY'><font color='blue'><U>View what's new...</U></font></a><br><a href='app:WM_INSTALL_UPDATE'><font color='blue'><U>Download and install now</U></font></a>"
+IDS_NO_UPDATE_HTML		"<b>No updates has been found.</b><br>"
+
+IDS_M_CREATE_DISK		"Create Disk"
+IDS_M_OPEN_DISK			"Explore Disk"
+IDS_M_CONNECT_DISK		"Connect Disk"
+IDS_M_DISCON_DISK		"Disconnect Disk"
+IDS_ABOUT			"About..."
+IDS_EXIT			"Exit"
+IDS_OPEN_ROHOS			"Open Rohos"
+IDS_DISK_WAS_DISCONECTED	"Disk has been disconnected."
+IDS_DISK_WAS_CONNECTED		"Disk has been connected. Click here to explore disk contents."
+IDS_DISK			"Disk"
+
+
+IDS_ADD_DISK_DLG		"Connect Rohos disk"
+IDS_SELECT_FILE_IMAGE		"Specify path to disk container file..."
+IDS_POINT_DISK_IMAGE		"Please specify path to file. Click on the link 'Specify path to file'"
+
+
+IDS_TRY_RESTORE_DISK    "Rohos tries to connect this disk using reserved copy of cryptographic keys. If this disk will appear as unformatted, then it did not help."
+IDS_DISCONNECT_X	"Disconnect %c:"
+IDM_CONNECT		"Connect more..."
+IDS_BROWSE_AVI_HTML 	"Or <u><font color='blue'><a href='app:WM_BROWSE'>specify a movie file (*.AVI)</a></font></u> to use steganography."
+IDS_BROWSE_FILE		"<font color='blue'><a href='app:WM_BROWSE'>Specify path to disk container...</a></font>"
+IDS_WRONG_FOR_STEGANOS "You have specified this file to use steganography: \n%s. \n\n It is impossible to use steganography for this file. Very small size (less than 8 Mb) or an error while opening the file. Specify another media file."
+
+IDS_SKIP_WIZARD_YES	"Are you sure to skip this Wizard and open Rohos Center ?"
+IDS_DELL_DISK_OK_REBOOT "Rohos disk has been successfully erased. Please restart Windows in order to free space that was occupied by the disk container."
+
+IDS_YOU_CONNECT_DISK2	"You can connect Rohos disk by selecting container and typing right password. After connecting the new disk will appear.\n\nTo turn off the disk use 'Disconnect' link or Rohos icon near the clock."
+IDS_REMEMBER_DISK	"Remember this disk as favorite."
+
+IDS_CHOOSE_HOT_KEY	"Choose hotkey that you can use later to disconnect Rohos disk by pressing it:"
+
+IDS_SETUP_ROH_PSW_OK	"The password for Rohos Center has been successfully created! Remember it."
+
+IDS_ROH_PSW_DESC	"You can create a password to access Rohos Center. This can reduce the risk of unauthorized access to security settings. To remove the password leave the fields blank."
+IDS_YOU_BACKUP_DLG	"Password Reset File"
+IDS_YOU_BACKUP_DESC	"The Password Reset File can help you to recover a forgotten password for the encrypted disk. No matter how many times you change your password, you have to create this file only once.\n\nWarning: You should keep this file in secret!"
+IDB_CREATE_COPY		"Create backup..."
+IDS_COPY_X_SUCC		"Password Reset File has been successfully created!\n\nFile: %s \n\nWarning: You should keep this file in secret!"
+IDS_BROWSE_COPY		"Please specify the location where to store the password reset file. Estimated file size: 10 KB. You can choose Floppy disk, folder, tape."
+
+
+IDS_BROWSE_BACKUPS		"<font color='blue'><a href='app:WM_BROWSE2'>Specify path to disk backups file (*.RDI1 or *.RDX) ...</a></font>"
+IDS_POINT_DISK_BACKUPS	"Please specify path to disk backups file. Click on the link 'Specify path to disk backups...'"
+IDS_RESTORE_TEXT		"To restore Rohos disk you should specify Rohos disk container (*.RDI), backup file (*.RDI1, or *.RDX) and password to acces Rohos disk. "
+
+IDS_INSTALL_ROH_LOGIN	"Rohos Logon component is not installed. You can download a 15-day trial version here http://www.rohos.com/download/welcome-screen/rohos_welcome.exe. "
+
+IDS_SELECTED_FILES	"The list of selected files:"
+IDS_SHOW_PATH		"Show path"
+IDS_BROWSE		"Browse:"
+IDS_COPY_SHREDD		"Copy and Shred"
+IDS_SHREDD_DEL		"Shred only (erase)"
+IDS_SHREDDER_DLG	"Rohos File Shredder"
+IDS_WHERE_TOCOPY	"Select the target folder or disk:"
+IDS_HIDDEN_VOLUME	"Encrypted Disk"
+
+IDS_RESIZE_DISK_DLG	"Increase disk size"
+IDS_RESIZE_INFO		"During resizing the volume will be disconnected temporarily. This operation is supported only for NTFS volumes. You can enlarge the size of a volume many times."
+IDS_RESIZE_TO		"Increase disk size by :"
+IDS_OPEN_DISK_BROWSER	"Open Disk Browser for this disk..." 
+IDS_USB_PROTECT_OK_FS_INFO	"Encrypted partiton has been successfully created. \n\nTo open it on a guest computer use Rohos Mini.exe icon from a root folder on that USB drive.\n\n Now you may add files to it."
+IDS_PLEASE_CONNECT_MINI_DRIVE_USB "If you have secured Rohos partition on your USB flash drive, please connect this USB drive for licensing."
+
+IDS_REMOVE_MINI_INFO	"To remove Rohos Disk partition from this USB flash drive the hidden '_rohos' folder should be removed. "
+
+IDS_DISK_KEY_DLG		"Setup USB Key"
+IDS_DISK_NACKUP_REMINDER	"It's time to backup. Rohos just wanted to remind you that it's time to Backup Rohos Disk."
+IDS_MOUNT_AS_READONLY		"Connect as read-only drive"
+IDS_MOUNT_AS_REMOVABLE		"Connect as removable drive"
+IDS_X_IS_NOT_NTFS_VOLUME	"%s is not a NTFS volume."
+IDS_PLS_CHOOSE_DISK_FILE 	"Please specify valid Rohos disk container file."
+IDS_HOST_DRIVE_IS_FAT		"Host Drive is FAT32. it is possible to enlarge only up to 2 Gb."
+
+IDS_USB_DRIVE_REPARTITIONED	"Disk Drive (%s) will be re-partitioned, all existing files will be erased."
+
+IDS_FolderIsLinkedAlready    "This folder is linked with another folder. "
+IDS_FolderIsHiddenAlready    "This folder has already been hidden with Rohos Disk. "
+
+IDS_DISK_IS_NOT_CONNECTED	"Rohos Disk is not connected. Please connect it first."
+
+IDS_X_SECOND_TIMEOUT		"%d seconds before this dialog will be closed."
+IDS_PLEASE_CLOSE_ALL_APP	"Please close all Application and Documents and try again."
+IDS_ENTER_KEY_PIN_DISK		"Please enter PIN in order to access to Rohos Disk"
+
+
+//Rohos Logon Key - login strins only
+
+IDS_WRONG_USB_DATA      "The password in USB key is invalid. \n\nReasons: \n - Password was changed but USB key was not updated with it. \n - USB key data were modified. \n - Wrong logon Profile on USB key."
+IDS_WRONG_USB_KEY       "USB Key was not configured for this computer, it will be ignored."
+IDS_SELECTING_USER_PICTURE    "Selecting new picture for user account"
+
+IDS_WORK_TIME			"Work hours:"
+IDS_B_FINISH_SESSION		"&Log Off / End session"
+IDS_B_LOCK_WKSTA		"Lock desktop"
+IDS_T_HIBERNATE		"&Hibernate"
+IDS_T_SUSPEND			"&Suspend"
+IDS_T_RESTART			"&Restart"
+IDS_T_TURNOFF			"T&urn Off"
+IDS_L_DOMAIN_SELECT		"Click for Domain login"
+
+IDS_STARTING			"Starting..."
+IDS_TURNING_OFF		"Finishing..."
+IDS_PREPARING			"Loading..."
+IDS_WELCOME_TO_WIN		""
+IDS_USERS			"Users "
+IDS_LOCAL_LOGIN		"this computer"
+IDS_WKSTA_LOCKED		"Desktop is locked"
+IDS_USER_LOGGED_ON		"Session is active"
+IDS_DOMAIN			"Domain"
+IDS_B_RETURN			"get back"
+IDS_SHUTDOWN_DLG		"Turn off computer\n  You have been on your PC today: %s"
+IDS_DISCONECT			"Disconnect from session"
+IDS_LOCK_PC_INFO		"Win + L  - Lock the desktop"
+
+IDS_CHANGE_PSWD 		"Change Windows password"
+
+IDS_WELCOME_PROMPT      "Please select user account and enter password to start"
+
+IDS_UNLOCK_PROMPT_X     "\n\nThe computer can be unlocked by %s or by computer administrator (by entering his password)."
+IDS_SURE_TO_LOGOFF      "Close all Applications and terminate this session ?"
+IDS_YOU_CAN_CHANGE_WIN_PASSW          "You can change your Windows password."
+IDS_YOU_CAN_CHANGE_WIN_PASSW_KEY_X       "You can change your Windows password. New password will be synchronized with USB Key (%s)."
+
+IDS_SUCC_PASSW_CHANGE_AND_KEY 
+                          "Windows password has been changed successfully ! New password has been successfully updated on the USB Key."
+
+IDS_LOGON_USERS_DLG		"Setup users"
+IDS_SELECT_USER			"Please select user:"
+
+IDS_CAN_SAVE_CHANGES		"Could not save changes"
+IDS_SHOW_USER_IN_WELCOME	"Display the user account on the logon screen."
+
+IDS_PLEASE_SELECT_ITEM		"Please select an item from the list"
+IDS_B_TURN_OFF		"T&urn Off"
+
+IDS_DONT_SHOW_AGAIN		"Don't show this message again."
+IDS_UNKNOWN_USB_DRIVE_HTML	"Unknown USB Key"
+
+IDS_USB_REMOVAL_HTML		"USB Key has been disconnected"
+IDS_AUTO_USB_LOCK_TEXT_HTML	"Computer has been locked because USB Key was unplugged."
+IDS_AUTO_USB_LOGOFF_TEXT_HTML	"Your session has been closed because USB Key was unplugged."
+IDS_AUTO_USB_TURNOFF_TEXT_HTML	"Computer will be turned off because USB Key was unplugged."
+IDS_AUTO_USB_SLEEP2_TEXT_HTML	"Computer will be hibernated because USB Key was unplugged."
+IDS_DOMAIN_LOGIN		"Domain login"
+IDS_DOMAIN_LOGIN_PROMPT		"Please enter user name and password to login."
+IDS_USER_NAME			"User name:"
+IDS_L_PASSW_TIP			"Type your password tip:"
+IDS_ONLY_USB_LOGIN		"You can login into this PC only by the USB Key."
+IDS_SELECT_LOGIN		"Login into Windows"
+IDS_SELECT_LOGIN_PROMPT		"You can enter user name and password to log into this computer."
+IDS_SUCC_WIN_PASS_TO_USB    "Your Authentication Key has been successfully configured! \n\nNow you can use it for Windows login, and unlock desktop."
+
+IDS_CANT_CHECK_PSWD  "Your password could not be verified. \nHowever you can continue if you are sure that it is correct. \n\nContinue  ?"
+IDS_CHOOSE_USB_DEV	"You can manually specify your USB flash drive, if it does not detected automatically."
+IDS_LOGIN_BY_KEY	"Login by USB key"
+ 
+IDS_UNLOCK_WHEN_TIME	"The computer can be unlocked only by a local Administrators"
+IDS_LOGIN_INT_ERR	"Internal error. Sorry for inconvinience."
+
+IDS_PLEASE_CLICK_USER_ICON	"Please click on your user icon to help to determine where to auto-fill password."
+IDS_PLEASE_CLICK_USER_ICON_VISTA	"Please click on your user icon and keep your mouse untouched for a second..."
+IDS_FAILED_TO_AUTOFILL		"Unable to auto-fill user password. Please click on your user icon or password field."
+IDS_FAILED_TO_AUTOFILL2		"Unable to auto-fill your password. Please tell us about this problem. Now you can re-insert USB Key and try again or login manually.\n\nWe are sorry for inconvenience."
+IDS_CLICK_USB_LOGIN	"Click here to login by using USB Key."
+
+IDS_T_CHOOSE_PLOFILE_TO_LOGIN	"Choose user profile to login:"
+IDS_GENERATE_PASS		"Generate strong password"
+IDS_CLEAR_USB_LOGIN	 	"All login data will be deleted from the USB Key and it will be completely deassigned from the login. \n\nContinue ?"
+IDS_AUTOLOGIN_DISABLED		"Automatic Windows login was disabled."
+IDS_WRONG_LICENSE		"Your's license does not support this feature. Please upgrade your license."
+
+IDS_CLIENT_USB_ON_RDP_INSTALLED	"Remote Login component has been successfully installed. Please restart Remote Desktop connection in order to use USB Key for login."
+IDS_USB_OPTIONS_DISABLED		"All USB Key login related options are disabled."
+IDS_USBKEY_CLIENT_NOT_FND_INSTALL "USB Key login component was not found."
+
+IDS_USBKEY_INFO		"USB Key XX is configured to login into Windows."
+IDS_USBKEY_NOTUSED	"USB Key is not configured as yet. <br>If you want to use <b>USB Tokens</b> (smart-cards) or <b>Bluetooth</b> mobile devices as a USB Key, then open"
+IDS_USBKEY_ANDPASS	"Manual password entry as well as USB Key are allowed for login."
+IDS_USBKEY_ONLY		"Login is allowed only by using USB Key."
+
+
+    IDS_DLG_QUESTIONS_1     "In case your USB key lost or broken use Emergency Logon to reset your password and log into Windows. Choose or type at least one question and answer that is known only to you. "
+    IDS_DLG_EL_1            "You have 3 attempts to provide correct answers to the following questions. The answers are not case sensitive."
+    IDS_DLG_EL_3            "Type your answer:"
+    IDS_NEXT                "Next"
+    IDS_INCORRECT           "Incorrect answer, please retype. After 3 wrong attempts Emergency Logon dialog will be disabled for you."
+    IDS_NO_SUCH_USER        "User not found or you didnt setup Emergency Logon."
+    IDS_BLOCKED             "Sorry, this dialog is blocked for you..."
+    IDS_EMPTY               "You must choose or type at least one question and answer."
+    IDS_NO_ANSWER           "Please, enter answers for all of your questions."
+    IDS_QUESTION1           "What is your favorite car model?"
+    IDS_QUESTION2           "What is your spouses nickname?"
+    IDS_QUESTION3           "What was your nickname in a school?"
+    IDS_QUESTION4           "Memorable Pass Phrase [10 ch max]"
+
+    IDS_DLG_EL_TITLE        "Emergency Logon"
+    IDS_DLG_QUESTIONS_TITLE "Setup Emergency Logon"
+
+    IDS_NO_EMERG_LOGIN		"Emergency logon is not used. <a href = 'app:0@EmergencyLoginSetup'>Learn more...</a>"
+    IDS_EMLOGIN_SETUP_OK 	"Emergency logon way has been successfully configured!\n\nTo use it double-click USB Key icon on the logon screen."
+    IDS_EMLOGIN_ALREADY_IS	"You have already configured the Emergency LogOn, however you can configure it again. This will not affect any USB Key or Windows settings."
+IDS_QUESTIONS           	"Questions:"
+IDS_ABSWERS			"Answers:"
+
+IDS_YOU_CAN_RESET_PASSW		"Now you can reset your Windows password. Please enter your new password or leave empty to keep old password:"
+IDS_EM_LOGIN_BLOCKED		"An Emergency Logon attempt was made to access your user account. If this occurred without permission, please re-define your Emergency Logon."
+
+IDS_MAX_EMERGENCY_LOGON_COUNT  "Max number of emergency logon attempts:"
+
+IDS_DELETE_ALL_KEYS	"This will delete all information about authentication devices, Are you sure?";
+
+IDS_USER_KEY_LIST	"The list of registered users (keys) :"
+IDS_KEY_LIST		"USB Keys list"
+
+IDS_OTP_LOGIN		"Login by One Time Password"
+IDS_OTP_WRONGCODE	"Wrong One Time Password. Please try again with new OTP value after 30 sec."
+IDS_OTP_REQUIRED 	"2-factor authentication is required for %s. Please click OK and enter OTP code, user name and password. %s"
+IDS_ENTER_JUST_OTP_OR	"Enter all of the credentials or just OTP code"
+IDS_OTP_WAS_SENT_BY_SMS	"OTP code has been successfully sent by SMS."
+IDS_SMS_SENT_ERR	"SMS delivery warning, the server reply does not includes OK status: "
+
+IDS_YBK_DONT_ENTER_MANUALL "OTP string has been entered manually, Please try again using the Key"
+
+
+
+// common strings
+
+IDS_INT_ERR             "Internal Error."
+
+IDS_SUCC_CHANGE_DISKPASS "The password has been successfully changed."
+IDS_SUCC_DISK_PASS_TO_USB "The USB Key has been successfully configured !"
+IDS_OR_INSERT_KEY       "Or plug-in your USB Key."
+
+
+IDS_ROHOS_WELCOME 		"Rohos Logon Key"
+IDS_PICTERES_FILTER 		"Pictures (*.jpg; *.gif; *.bmp)\x00*.gif;*.bmp;*.jpg\x00All files (*.*)\x00*.*\x00\x00\x00"
+
+IDS_LOGON_OPTIONS_DLG		"Options"
+
+IDS_LOGON_KEY_DLG		"Setup USB Key"
+
+IDS_INCORRECT_PASSW		"The password you entered is incorrect."
+
+IDS_B_CHANGE_PSWD		"Change password"
+IDS_HELP			"Help"
+
+IDS_TRIAL30_HTML		"<font size='-1' color='red' face='Arial'>15-day trial period.</font><br>"
+IDS_TRIAL_FINISH_HTML		"<font size='-1' color='red' face='Arial'>15-day trial period has expired!</font><br>"
+
+IDS_CANCEL 			"&Cancel"
+
+IDS_L_CONFIRM_PASSW		"Confirm password:"
+IDS_L_PASSW			"Password:"
+IDS_L_NEW_PASSW               "New password:"
+
+IDS_T_CHANGE_PSWD_USB_X	"USB Key (%s) was found. This Key will be updated with new password."
+IDS_USBKEY_NOT_FOUND   	"USB Key is not inserted."
+IDS_ENTER_PASSW		"Enter your password:"
+IDS_USB_X_WRITEPROTECT	"The data could not be saved on USB key '%s'. Probably it is write-protected."
+IDS_ABOUT_INFO_XX		"Version: %s  <font color='gray'>%s</font><br> (c) Tesline-Service 2004-2015. <br>All rights reserved. <br><br>%s Web: <a HREF=http://www.rohos.com/> <font color='blue'><u>http://www.rohos.com/</u></font></a> <br> <br>E-mail: <a HREF=mailto:de@rohos.com> <font color='blue'><u>de@rohos.com</u></font></a>"
+IDS_ABOUT_DLG			"About"
+IDS_B_CLOSE			"Close"
+
+IDS_WARN_TRIAL          "Less than 10 days left for evaluating this software."
+IDS_TRIAL_FINISHED      "Trial time has expired. \n\nPlease order full version."
+
+IDS_PASW_NOT_MATCH      "The new and confirmed passwords you entered do not match!\nRe-enter the new password in 'Confirmation' text box."
+IDS_ERR_CHANGEPASSW_X   "An error occurred while changing password !\n%s"
+IDS_SUCC_PASSW_CHANGE   "Password has been changed successfully !"
+
+IDS_ACCESS_DENIED_FOR_USER 	"Unable to perform the action. You don't have administrator privileges. Please use"
+
+IDS_ROHOS_MAKE_FATAL		"Rohos performed an illegal operation."
+IDS_PLEASE_TELL_US_ERROR	"Please tell us about this error. This will help us to fix this bug .\n\n Error report contain system information and application internal state and will be sent over an internet now."
+IDS_REPORT_ERROR		"Report the problem"
+IDS_REPORT_WAS_SEND		"Your message has been sent successfully."
+IDS_FATAL_VER			"Rohos critical error\n version:"
+
+IDS_ALLFILES_FILTER 		"All files (*.*)\x00*.*\x00\x00\x00"
+
+IDS_ENTER_PIN		"Please enter PIN in order to access USB key :"
+IDS_SETUP_PIN		"Enter new PIN to protect access to the USB key:"
+IDS_CONFIRM_PIN		"Please confirm PIN to verify to remember it:"
+IDS_SETUP_PIN_OK	"PIN has been successfully changed! Please remember it."
+IDS_CONFIRM_PIN_BAD	"The PIN and confirmed PIN you entered do not match. Repeat once again."
+IDS_3PIN_ATTEMPTS_FAIL  "You entered wrong PIN lot of times. The USB key was blocked.\n\nTo unblock it open Rohos Logon Key > Setup USB Key > Unblock USB Key (or Disable USB Key and set it again).\nTo login now use your password, emergency login or Safe Mode Boot."
+IDS_WRONG_PIN		"Wrong PIN. Please note that you have only 3 attempts to enter valid PIN."
+IDS_USB_UNBLOCK_OK	"The key is unblocked! You can continue using it."
+IDS_NO_BLOCKED_PIN	"USB key is not blocked. You can continue using it."
+
+IDS_TRIAL_TIME_15_WARN 		"Trial time is almost expired. Please order full version to start using this program without alert messages."
+IDS_REGISTER				"Registration..."
+IDS_TRIALTIME_EXPLAIN_ROHOS   "<b>Trial time has expired</b>. Please note that Rohos is shareware. After a trial period you must either register or remove it from your computer. <br><br><b>Purchase online:</b><br>%s <br><br>Instant registration key delivery."
+IDS_ONLY_FOR_REGISTERED		"Only for registered users. \n\nOrder full version."
+IDS_REGISTERED_OK			"This product has been registered.\n\nClick 'Ok' if you want to upgrade your license key."
+IDS_HOW_TOREGISTER_URL_HTML	"To get licensed, <a href='%s'><font color='blue'><u>click here...</u></font></a>"
+IDS_LICENSED_COPY_HTML		"Registered copy<br><br>"
+IDS_GET_LICENSED			"Time limited demo version.<br><br>"
+IDS_TRIAL_TIME_DLG			"Please register"
+IDS_REG_NUM_DLG				"Registration"
+IDS_REGNUMDLG_PROMPT		"Enter your registration key:"
+IDS_TRIALTIME_EXPLAIN		"<b>15-day trial time has expired</b>. Please note that Rohos is shareware. After a 15-day trial period you must either register or remove it from your computer. <br><br><a href='%s'><font color=""blue""><u><b>Purchase this program...</b></u></font></a>"
+IDS_WRONG_REGNUM			"Wrong registration key. Please try again."
+IDS_THANKS_FOR_REG			"Thank you for registering Rohos !"
+IDS_TRIAL15					"This software expires after a 15-day trial period.\n\nPlease note that Rohos is shareware. After a 15-day trial period you must either register or remove it from your computer."
+
+IDS_NEED_ADMIN_PRIVILEGE	"You do not have Administrative rights for this operation. Use 'Run as Administrator' command."
+IDS_DEMO_KEY			"Demo USB Key has been found. Please register it."
+IDS_CHOOSE_USB_KEY_TYPE		"You can choose the type of authentication device to use in Rohos:"
+IDS_CHOOSE_USBDEV_LIST		"Rohos found several USB devices connected to your computer. Please select wich one to setup:"
+IDS_THIS_PC_HAS_OWN_UNIQUE_LOGIN_KEY		"There is a unique USB Key to log into this computer, please use it."
+IDS_CHOOSE_BIOMETRIC_STARTUP	"For Biometric USB Drive: <a href='app:1025' title='This program will be started by Rohos to start fingerprint logon.'>Choose Start-up program</a>"
+
+IDS_UPRADE_MINI_DRIVE_LNK	"<a href='http://www.rohos.com/products/rohos-mini-drive/upgrade/' target=_blank>How to upgrade Rohos Mini...";
+IDS_ACTIVATION			"License Key Activation"
+IDS_ACTIVATION_ERROR		"Activation Error. "
+IDS_ACTIVATION_EXCEED_COUNT	"The number of activations for this license key has reached its limit."
+IDS_ACTIVATION_SERVER_ERR	"Unknown web service error. Please try again later."
+IDS_PORGRAM_WEB_PAGE		"http://www.rohos.com"
+IDS_DONT_HIDE_ALL_USRICONS	"At least one user account should be visible in the Windows XP/Vista welcome screen in this logon model (3). "
+
+IDS_OPTIONS			"Options"
+IDS_MAX				"Max"
+IDS_PLEASE_TOUCH_OTP 		"Please enter OTP "
+IDS_AREYOU_SURE			"Are you sure?" 
+
+IDS_ERROR_OPENING_FILE		"Unable to complette file operation (read/write error)"
+
+IDS_PARTITION			"Partition"
+IDS_OPEN			"Open..."
+IDS_OPEN_WITH			"Open with..."
+IDS_CREATE			"New..."
+IDS_PROPERTIES			"Properties..."
+IDS_EXPORT			"Export..."
+IDS_RENAME			"Rename"
+IDS_FILE			"File"
+IDS_DELETE			"Delete..."
+IDS_IMPORT			"Import..."
+IDS_RESIZE			"Resize..."
+IDS_REPAIR			"Repair..."
+IDS_VIRTUAL_FOLDER		"Virtual Folder"
+
+IDS_SETTINGS			"Settings..."
+IDS_LIST			"List"
+IDS_ICON			"Icon"
+
+IDS_READONLY			"Opened for Read-Only."
+IDS_NOT_ENOUGH_SPACE		"Not enough free space on the drive %s."
+IDS_ROHOS_DISK_BROWSER		"Rohos Disk Browser"
+IDS_ROHOS_MINI_DRIVE		"Rohos Mini Drive"
+IDS_ROHOS_MINI_DRIVE_PORTABLE   "Rohos Mini Drive (Portable)"
+IDS_ROHOS_DISK			"Rohos Disk Encryption"
+IDS_ROHOS_DRIVE			"Rohos Disk"
+
+
+
+		
+END
+
+logon_strings.js               HTML    DISCARDABLE     "logon_strings.js"
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

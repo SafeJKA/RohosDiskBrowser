@@ -1,0 +1,603 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""version.rc""\r\n"
+    "#include ""manifest_user.rc""\r\n"
+    "#include ""strings.rc""\r\n"
+    "#include ""XKeyboard.rc""\r\n"
+    "#include ""icon.rc""\r\n"
+    "\r\n"
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DiskBrowser.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEARCH DIALOGEX 0, 0, 272, 125
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_SEARCH,82,7,77,13,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_STATIC_SERCH,7,7,67,13
+    CONTROL         "List1",IDC_LST_FOUND,"SysListView32",LVS_LIST | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_AUTOARRANGE | WS_TABSTOP,7,25,258,93,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Search",BT_SEARCH,161,7,50,13
+    PUSHBUTTON      "Goto",BT_GOTO,215,7,50,13
+END
+
+IDD_PROP DIALOGEX 0, 0, 183, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",BT_PROP_CLOSE,126,41,50,14
+    LTEXT           "Files:",IDC_PROP_INF2,7,7,41,11
+    EDITTEXT        IDC_PROP_PROP2,52,7,124,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    LTEXT           "Size:",IDC_PROP_INF3,7,22,40,11
+    EDITTEXT        IDC_PROP_PROP3,52,22,124,12,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+END
+
+IDD_HEXVIEW DIALOGEX 0, 0, 400, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Read",IDOK,133,247,50,14
+    EDITTEXT        IDC_EDIT1,73,247,58,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Read from Offset:",IDC_STATIC,7,249,60,8
+    EDITTEXT        IDC_HEX_EDIT,7,7,386,235,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE | WS_VSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,343,247,50,14
+END
+
+IDD_COPY DIALOGEX 0, 0, 294, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copying"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Progress1",IDC_CPY_PRG,"msctls_progress32",0x1,7,42,280,14,WS_EX_STATICEDGE
+    LTEXT           "",IDC_CPY_NAME,7,7,280,25
+    PUSHBUTTON      "Close",IDC_BUTTON1,227,62,60,14
+    PUSHBUTTON      "Report...",IDC_BUTTON2,159,62,60,14,NOT WS_VISIBLE
+    LTEXT           " ",IDC_STATIC1,7,63,88,13
+END
+
+IDD_DLG_PASSW DIALOGEX 0, 0, 254, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Disk password"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,45,19,173,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,111,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,81,50,14
+    LTEXT           "Enter Password:",IDC_LABEL_ENTER_PASS,47,7,164,10
+    PUSHBUTTON      "***",IDC_BUTTON1,226,19,21,12,BS_BOTTOM | BS_FLAT
+    COMBOBOX        IDC_COMBO1,7,55,210,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rohos Disk container file:",IDC_STATIC1,7,44,188,10
+    ICON            128,IDC_STATIC,7,9,21,20
+    PUSHBUTTON      "...",IDC_BUTTON3,226,55,21,12,BS_BOTTOM | BS_FLAT
+END
+
+IDD_DLG_PARTINFO2 DIALOGEX 0, 0, 288, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,173,223,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,231,223,50,14
+    EDITTEXT        IDC_EDIT1,14,20,254,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,125,42,142,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT3,125,63,142,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "File Name:",IDC_LABEL_FILENAME,16,7,110,8
+    RTEXT           "Encryption Algorithm:",IDC_LABEL_ALGO,7,44,104,8
+    RTEXT           "Disk Letter:",IDC_LABEL_DISKNUM,8,66,103,8
+    EDITTEXT        IDC_EDIT6,125,84,142,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    RTEXT           "Disk Size:",IDC_DSIZE,11,88,100,8
+    EDITTEXT        IDC_EDIT4,69,130,199,41,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    RTEXT           "AES Key:",IDC_LABEL_KEY,7,146,54,8
+    EDITTEXT        IDC_EDIT5,69,181,200,30,ES_MULTILINE | ES_READONLY | NOT WS_VISIBLE | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "IV:",IDC_LABEL_IV,51,192,10,8,NOT WS_VISIBLE
+    CONTROL         "Read Only",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_CENTER | BS_TOP | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,223,86,49,10
+    EDITTEXT        IDC_EDIT8,139,7,101,12,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      "HEX...",IDC_BUTTON1,110,223,50,14
+    RTEXT           "Free space:",IDC_DSIZE2,11,107,100,8
+    EDITTEXT        IDC_EDIT7,125,105,142,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_INFO_NOGHI DIALOGEX 0, 0, 252, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,137,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,192,98,50,14
+    CONTROL         "Don't show again",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,101,124,8
+    LTEXT           "Label Info",IDC_LABEL_INF,38,7,203,19
+    LTEXT           "Label2",IDC_LABEL2,9,104,13,8,NOT WS_VISIBLE
+    ICON            128,IDC_STATIC2,9,7,20,20
+    CONTROL         "Prevent data leak from th new process  (Prevents registry and file changes. Limited network connection)",IDC_CHECK_ISOLATE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,38,38,204,17
+    CONTROL         "Virtualize all files with subfolders ",IDC_CHECK_VFOLDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,61,210,8
+END
+
+IDD_DLG_ABOUT DIALOGEX 0, 0, 232, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,92,50,14
+    LTEXT           "Rohos Disk Browser v2.0.1 \n(c) 2015  Tesline-service srl\n\nhttp://www.rohos.com",IDC_STATIC1,113,7,112,34,0,WS_EX_ACCEPTFILES
+    CONTROL         159,IDC_STATIC,"Static",SS_BITMAP,7,7,91,54
+    LTEXT           "Static",IDC_STATIC2,7,98,46,8
+END
+
+IDD_DLG_F_CHANGED DIALOG  0, 0, 161, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Disk Reader"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,24,41,50,14
+    PUSHBUTTON      "No",IDCANCEL,82,41,50,14
+    CTEXT           "A file has been changed. Do you want to save your changes?",IDC_CAP_F_CHANGED,17,12,126,18
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 271, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New encrypted disk"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Create encrypted disk within a file ",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_GROUP | WS_TABSTOP,26,39,227,10
+    CONTROL         "Create hidden encrypted disk within a media file (AVI, mp3, wma)",IDC_RADIO3,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_TABSTOP,26,53,229,13
+    CONTROL         "Create real hidden partition (requires admin rights)",IDC_RADIO2,
+                    "Button",BS_AUTORADIOBUTTON | BS_TOP | BS_MULTILINE | WS_TABSTOP,26,68,229,9
+    PUSHBUTTON      "Change...",IDC_BUTTON1,214,97,50,14
+    EDITTEXT        IDC_EDIT1,115,126,149,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,115,144,149,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,143,169,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,214,169,50,14
+    LTEXT           "Create encrypted area (partition) within USB flash drive.",IDC_STATIC2,51,8,178,21
+    LTEXT           "Password:",IDC_STATIC3,19,128,84,8
+    LTEXT           "Confirm Password:",IDC_STATIC4,19,146,89,8
+    LTEXT           "...",IDC_STATIC1,28,96,173,18
+    ICON            128,IDC_STATIC,12,10,21,20
+    LTEXT           "Specify disk image file",IDC_STATIC6,28,84,175,8,SS_NOTIFY | NOT WS_VISIBLE
+    GROUPBOX        "Static",IDC_STATIC5,7,32,257,84,NOT WS_VISIBLE
+END
+
+IDD_DISK_CREATE2 DIALOGEX 0, 0, 246, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Параметры Диска"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_LETTER,143,12,69,136,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,144,33,67,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_FAT,144,53,68,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ALGO,144,73,68,75,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,10,119,203,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDOK2,218,119,21,14,BS_FLAT
+    DEFPUSHBUTTON   "OK",IDOK,129,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,187,170,50,14
+    LTEXT           "Буква диска:",IDC_STATIC1,10,14,129,8
+    LTEXT           "Размер диска (в Мегабайтах):",IDC_STATIC2,10,36,128,8
+    LTEXT           "Файловая система :",IDC_STATIC3,10,54,128,8
+    LTEXT           "Алгоритм шифрования:",IDC_STATIC4,10,74,124,8
+    LTEXT           "",IDC_STATIC5,10,103,231,13
+    LTEXT           "Свободное место на локальных дисках:",IDC_STATIC_DISK_INFO,11,140,215,19
+END
+
+IDD_CHANGE_PASSW1 DIALOGEX 0, 0, 231, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Disk Password"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT1,56,26,140,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,56,64,140,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,56,99,140,13,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,110,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,137,50,14
+    LTEXT           "Enter Password: ",IDC_LABEL_ENTER_PASS,56,14,167,8
+    PUSHBUTTON      "***",IDC_BUTTON1,203,25,21,12,BS_BOTTOM | BS_FLAT
+    LTEXT           "New password:",IDC_LABEL_ENTER_PASS2,56,53,138,11
+    PUSHBUTTON      "***",IDC_BUTTON3,203,64,21,12,BS_BOTTOM | BS_FLAT
+    LTEXT           "Confirmation:",IDC_LABEL_ENTER_PASS3,56,88,139,8
+    PUSHBUTTON      "***",IDC_BUTTON4,203,98,21,12,BS_BOTTOM | BS_FLAT
+    ICON            128,IDC_RADIO1,19,18,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        VERTGUIDE, 52
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+        HORZGUIDE, 7
+        HORZGUIDE, 22
+        HORZGUIDE, 38
+    END
+
+    IDD_HEXVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_COPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DLG_PASSW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_DLG_PARTINFO2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_INFO_NOGHI, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DLG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_DLG_F_CHANGED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_CHANGE_PASSW1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+IDR_TOOLBAR1            BITMAP                  "res\\toolbar1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+IDB_LOGO                BITMAP                  "res\\rohos_mini_logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32774
+    BUTTON      ID_BUTTON32775
+    BUTTON      ID_BUTTON32776
+    BUTTON      ID_BUTTON32777
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "O",            ID_PARTITION_OPEN,      VIRTKEY, CONTROL, NOINVERT
+    "S",            1103,                   VIRTKEY, CONTROL, NOINVERT
+    "P",            1104,                   VIRTKEY, CONTROL, NOINVERT
+    "L",            1107,                   VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          1108,                   VIRTKEY, NOINVERT
+    "F",            2001,                   VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DISK_CREATE2 DLGINIT
+BEGIN
+    IDC_COMBO_FAT, 0x403, 4, 0
+0x4146, 0x0054, 
+    IDC_COMBO_FAT, 0x403, 6, 0
+0x4146, 0x3354, 0x0032, 
+    IDC_COMBO_FAT, 0x403, 5, 0
+0x544e, 0x5346, "\000" 
+    IDC_COMBO_ALGO, 0x403, 7, 0
+0x4541, 0x3253, 0x3635, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENUEX 
+BEGIN
+    POPUP "Partition",                      65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "New...",                      ID_PARTITION_NEW,MFT_STRING,MFS_ENABLED
+        MENUITEM "Open...",                     ID_PARTITION_OPEN,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Resize...",                   ID_PARTITION_RESIZE,MFT_STRING,MFS_ENABLED
+        MENUITEM "Repair...",                   ID_PARTITION_REPAIR,MFT_STRING,MFS_ENABLED
+        MENUITEM "Change Password...",          ID_PARTITION_CHANGEPASSWORD,MFT_STRING,MFS_ENABLED
+        MENUITEM "Information...",              ID_PARTITION_INFORMATION,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Exit",                        ID_PARTITION_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "File",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Preview...",                  ID_FILE_PREVIEW,MFT_STRING,MFS_ENABLED
+        POPUP "Open...",                        65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+        BEGIN
+            MENUITEM "Open",                        ID_OPEN_SIMPLEOPEN,MFT_STRING,MFS_ENABLED
+            MENUITEM "Open with...",                ID_FILE_OPENWITH,MFT_STRING,MFS_ENABLED
+            MENUITEM "Open and prevent data leak",  ID_OPEN_OPENANDPREVENDDATALEAK,MFT_STRING,MFS_ENABLED
+            MENUITEM "Open and virtualize folder tree", ID_OPEN_OPENANDVIRTUALIZEFOLDERTREE,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM "Virtual Folder",              ID_A_VIRTUALFOLDER,MFT_STRING,MFS_ENABLED
+        MENUITEM "Export...",                   ID_FILE_EXPORT,MFT_STRING,MFS_ENABLED
+        MENUITEM "Delete",                      ID_FILE_DELETE,MFT_STRING,MFS_ENABLED
+        MENUITEM "Rename",                      ID_FILE_RENAME,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Properties...",               ID_FILE_PROPERTIES,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "View",                           65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "List",                        ID_VIEW_LIST,MFT_STRING,MFS_ENABLED
+        MENUITEM "Icon",                        ID_VIEW_ICON,MFT_STRING,MFS_ENABLED
+        MENUITEM "Table",                       ID_VIEW_TABLE,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "?",                              65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "About",                       ID__ABOUT,MFT_STRING,MFS_ENABLED
+        MENUITEM "Check Updates...",            ID__WEB,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "a"
+    BEGIN
+        MENUITEM "New folder...",               ID_A_NEWFOLDER
+        MENUITEM "Virtual Folder",              ID_A_VIRTUALFOLDER
+        MENUITEM "Import...",                   ID_A_IMPORT
+        POPUP "View"
+        BEGIN
+            MENUITEM "Hidden files",                ID_VIEW_HIDDENFILES
+            MENUITEM "List",                        ID_VIEW_LIST
+            MENUITEM "Icons",                       ID_VIEW_ICON
+        END
+    END
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CHK_DSK DIALOGEX 0, 0, 270, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Repair Tools [Experimental]"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Check Errors",IDOK,7,176,83,14
+    PUSHBUTTON      "Close",IDCANCEL,213,176,50,14
+    EDITTEXT        IDC_EDIT1,7,17,256,112,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    CONTROL         "Fix Errors",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,141,47,10
+    CONTROL         "Scan for bad sectors",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,154,82,10
+    DEFPUSHBUTTON   "Format ",IDOK2,107,176,89,14
+    COMBOBOX        IDC_COMBO1,110,143,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Status:",IDC_STATIC,7,7,141,8
+END
+
+IDD_TL_NTFSREADER_DIALOG DIALOGEX 0, 0, 482, 308
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "Rohos Mini Drive Portable"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_HSCROLL | WS_TABSTOP,7,194,109,107,WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_NOSORTHEADER | WS_TABSTOP,319,197,156,104,WS_EX_ACCEPTFILES | WS_EX_STATICEDGE
+    CONTROL         "",IDC_RESIZER,"Static",SS_SIMPLE | SS_NOTIFY | WS_GROUP,100,31,8,92
+    COMBOBOX        IDC_PATH,309,11,124,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_FAVORITES,437,10,16,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CHK_DSK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CHK_DSK DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0x544e, 0x5346, "\000" 
+    IDC_COMBO1, 0x403, 6, 0
+0x4146, 0x3354, 0x0032, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "version.rc"
+#include "manifest_user.rc"
+#include "strings.rc"
+#include "XKeyboard.rc"
+#include "icon.rc"
+
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\DiskBrowser.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

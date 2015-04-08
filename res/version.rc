@@ -1,0 +1,38 @@
+#include "comp_rc.h"
+#include "prod_rc.h"
+#include "file_rc.h"
+
+// Version
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION FILE_VERSIONBIN
+ PRODUCTVERSION VERSIONBIN
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK VERL_BLOCK
+        BEGIN
+            VALUE "CompanyName", COMPANY
+            VALUE "FileDescription", FILE_DESCRIPTION
+            VALUE "FileVersion", FILE_VERSIONSTR
+            VALUE "InternalName", FILE_INTERNAL_NAME
+            VALUE "LegalCopyright", COPYRIGHT
+            VALUE "OriginalFilename", FILE_INTERNAL_NAME
+            VALUE "ProductName", PRODUCT
+            VALUE "ProductVersion", VERSIONSTR
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", VERL_VALUE
+    END
+END
